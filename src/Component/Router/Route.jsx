@@ -14,7 +14,7 @@ const myCreatedRoute = createBrowserRouter([
             {
                 path : "/",
                 element : <Home></Home>,
-                loader : ()=> fetch('../../../public/category.json')
+                loader : ()=> fetch('/category.json')
             },
             {
                 path : "/Donation",
