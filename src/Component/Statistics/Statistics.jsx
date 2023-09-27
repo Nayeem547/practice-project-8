@@ -80,11 +80,11 @@ const Statistics = () => {
     
        
         <h2>Your Donation</h2>
-        <div className=" bg-[#00C49F] border px-14 rounded " ></div>
+        <div className=" flex bg-[#00C49F] border px-14 rounded " ></div>
         
         
         <h2>Total Donation</h2>
-        <div className=" bg-[#FF444A] border px-14 rounded " ></div>
+        <div className=" flex bg-[#FF444A] border px-14 rounded " ></div>
         
       </div>
     </div>

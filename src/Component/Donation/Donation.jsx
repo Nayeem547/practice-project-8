@@ -26,7 +26,7 @@ const Donation = () => {
         <div className=' flex justify-center ' >
            {noFound? <p className=' h-[80vh] flex justify-center text-3xl font-bold items-center ' >{noFound}</p> 
            : 
-           <div className='  grid grid-cols-2 items-center mt-7 gap-4  ' >
+           <div className='  grid grid-cols-1 lg:grid-cols-2 items-center mt-7 gap-4  ' >
            {
              
              isShow ? donation.map( (card) => ( <DonationCard key={card.id} card={card} ></DonationCard> ) )
