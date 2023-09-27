@@ -20,7 +20,7 @@ const CategoryCard = ({card}) => {
         }
       } className="  card-title  px-3 py-1 text-sm ">{category}</h2>
    </div>
-    <h2 style={{ color : text_button_bg }} className=' text-base font-semibold ' >{title}</h2>
+    <h2 style={{ color : text_button_bg }} className=' text-base font-semibold ' className=' text-base font-semibold ' >{title}</h2>
     
   </div>
 </div>
