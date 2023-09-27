@@ -1,0 +1,21 @@
+
+.overla{
+    
+    position: absolute;
+    top : 400px;
+        left: 0;
+        padding: 16px 1px 85px 1098px;
+        background-color: rgba(11, 11, 11, 0.5);
+        
+      z-index: 0;
+
+    
+    
+    
+}
+
+.boton{
+    z-index: 1;
+    top : 433px;
+     left:50px;
+}

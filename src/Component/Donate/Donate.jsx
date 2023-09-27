@@ -1,17 +1,31 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
+import DonateCard from './DonateCard';
+
 
 const Donate = () => {
-    const params = useParams()
-    console.log(params);
-
-    const category = useLoaderData()
-        console.log(category);
     
+      
+
+    const [card, setCard] = useState({});
+
+    const {id} = useParams();
+    console.log(id);
+
+    const category = useLoaderData();
+        console.log(category);
+        
+        useEffect(()=> {
+            
+           const findCard = category?.find(card=>card.id == id);
+           setCard(findCard);
+
+        }, [id, category]);
 
     return (
-        <div>
-           donating 
+        <div className='flex   justify-center' >
+          <DonateCard  card={card} ></DonateCard>
+           
         </div>
     );
 };
