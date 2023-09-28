@@ -55,37 +55,34 @@ const Statistics = () => {
   }, [donations]);
   return (
     <div>
-    <div className=" flex justify-center  " >
-      {" "}
-      <PieChart width={400} height={400}>
-        <Pie
-          data={data}
-          cx="50%"
-          cy="50%"
-          labelLine={false}
+      <div className=" flex justify-center  ">
+        {" "}
+        <PieChart width={400} height={400}>
+          <Pie
+            data={data}
+            cx="50%"
+            cy="50%"
+            labelLine={false}
             label={renderCustomizedLabel}
-          outerRadius={80}
-          fill="#8884d8"
-          dataKey="value"
-        >
-          {data.map((entry, index) => (
-            <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-          ))}
-        </Pie>
-      </PieChart>
-
-      
-    </div>
-    <div className="flex justify-center gap-3 " >
-    
-       
+            outerRadius={80}
+            fill="#8884d8"
+            dataKey="value"
+          >
+            {data.map((entry, index) => (
+              <Cell
+                key={`cell-${index}`}
+                fill={COLORS[index % COLORS.length]}
+              />
+            ))}
+          </Pie>
+        </PieChart>
+      </div>
+      <div className="flex flex-col md:flex-row lg:flex-row items-center justify-center gap-1  md:gap-3 lg:gap-3 ">
         <h2>Your Donation</h2>
-        <div className=" flex bg-[#00C49F] border px-14 rounded " ></div>
-        
-        
+        <div className=" flex w-24 bg-[#00C49F] border h-4 rounded "></div>
+
         <h2>Total Donation</h2>
-        <div className=" flex bg-[#FF444A] border px-14 rounded " ></div>
-        
+        <div className=" flex w-24 bg-[#FF444A] border h-4 rounded "></div>
       </div>
     </div>
   );

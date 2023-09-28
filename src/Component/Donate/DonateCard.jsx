@@ -33,17 +33,17 @@ const DonateCard = ({card}) => {
     }
 
     return (
-        <div className='  ' >
+        <div className='   flex-col justify-center  ' >
             
              <div className=' relative  ' >
-             <img className='w-[1100px] h-[500px] object-cover rounded-md ' src={picture} alt="" />
+             <img className=' w-[400px] md:w-[900px] lg:w-[1100px] h-[300px] md:h-[400px] lg:h-[500px] object-cover rounded-md ' src={picture} alt="" />
             <div className=' ' >
-            <button onClick={handleDonate} style={{ backgroundColor : text_button_bg }} className=' absolute boton  text-white px-3 py-2 rounded-sm text-md ' >Donate {price}</button>
+            <button onClick={handleDonate} style={{ backgroundColor : text_button_bg }} className=' absolute boton  text-white px-1 md:px-3 lg:px-3 py-1 md:py-2 lg:py-2 rounded text-md ' >Donate {price}</button>
                 <div className='overla  object-cover ' ></div>
                 
             </div>
             </div> 
-            <div className=' space-y-4 mt-4 ' >
+            <div className=' space-y-4 mt-4 text-left ' >
                 <h1 className=' text-3xl font-bold  ' >{title}</h1>
                 <p>{description}</p>
             </div>
